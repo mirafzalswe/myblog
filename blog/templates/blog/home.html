@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Home page
+{% endblock title %}
+
+{% block content %}
+    <h1>HOME</h1>
+    {% for message in messages %}
+        <div class="succes" >{{ message }}</div>
+    {% endfor  %}
+{% endblock content %}
