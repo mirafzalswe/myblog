@@ -35,3 +35,20 @@ bu dokumnetatsiaydan bor koproq oqib chiqish kerak
 
                               SIGNAL
  Signal bu qahonki nimadir harakat yuzaga kelsA BOSHQA  bir jarayon ham yuzaga keltirishda ishlatiladi
+
+
+
+                                 Model From
+      yani biz form orqali Modelimizni ozgarishlar sodir qilshimzi mumkun
+
+
+
+enctype="multipart/form-data"> manashu narsani formga bermasa u rasm qabul qilmaydi ishlamaydi buziladi javop
+
+
+#Models dagi super() save img PIL bular nimaga kerak desa
+desa bular dokumentatsiay oqishimz kerak bu yerda ozgartirish rasmini xajmini default qlib togirlaydigan qilish kerak
+xotirani tejashga sait tez ishlashiga yordam beradi
+
+
+                                                            CVB (django jeneric) Clas Basic Viev
