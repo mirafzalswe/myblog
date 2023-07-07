@@ -52,3 +52,7 @@ xotirani tejashga sait tez ishlashiga yordam beradi
 
 
                                                             CVB (django jeneric) Clas Basic Viev
+
+
+biz  bu yerda dfe hom(request) orniga bu class viev larni ishlatamiz bu dokumetatsiau oqi
+kein bo context_object_name ni orniga html fayli object_list qilsak boladi

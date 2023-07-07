@@ -1,5 +1,5 @@
 {% extends 'blog/base.html' %}
-
+{% load crispy_forms_tags %}
 {% block title %}
     Home page
 {% endblock title %}
@@ -7,10 +7,9 @@
 {% block content %}
     <h1>HOME</h1>
 
-    {% for post in posts%}
         <div class="container">
             <div class="container-post">
-                <h3><a href="{% url 'post-detail' post.id%}">{{ post.title }}</a></h3>
+                <h3>{{ post.title }}</h3>
                 <h6>{{ post.content }}</h6>
                 <p>{{ post.author }}</p>
                 <p>{{ post.data }}</p>
@@ -18,8 +17,9 @@
                     <span class="post-card-author">@{{ post.author }} |</span>
                     <span class="post-card-author">{{ post.data|date:"l G:i" }} </span>
                 </p>
+                    <a class="btn btn-outline-danger" href="{% url 'delete-post'  object.id%}">Delete</a>
+                    <a class="btn btn-outline-secondary" href="{% url 'post-update' object.id %}">Update</a>
             </div>
         </div>
-    {% endfor %}
 
 {% endblock content %}
