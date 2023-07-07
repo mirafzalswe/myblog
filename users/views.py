@@ -12,7 +12,7 @@ def regsiter(request):
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f" {username} muvofaqiyali royxatdan otingiz")
-            return redirect('blog-home')
+            return redirect('login')
     else:
         form = UserRegister()
     return render(request, 'users/register.html', {'form':form})

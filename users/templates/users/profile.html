@@ -5,6 +5,10 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>{{ user }}</h1>
+    <div class="prfofile-cards">
+        <img src="{{ user.profile.avatar.url }}" alt="profile-img" class="profile_img" height="100px" width="100px">
+        <h5>{{ user }}</h5>
+    </div>
+
 
 {% endblock content %}

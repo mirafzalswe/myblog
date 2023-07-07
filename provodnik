@@ -16,3 +16,22 @@ akkauntga krimadan turip bizda profilega kirip ketyapti buni oldigni olish uchun
 biz login_required degan deckoratoni olib kelishimiz kerak u bizni login ni talab qiladi
 
 from django.contrib.auth.decorators import login_requierd
+
+
+n ta fayl bitta objetaga bogliq bolip  qolsihga FORENKEY  == MAnyTOOne
+ishlatamiz yoki kooop narsalrn bitta odam ga tegishli bolsa forneky ishlatiladi manytoone
+
+
+Yana OneToOneField degani bor == bu bir vaqtda ikta object bir objectga boglik  bolmasligi uchun
+ishlatiladi
+
+
+Yana ManyToMayno degani bor biror object 0 yoki undan objeclarga bogliklikni korsatadi
+bu 2 ta doxtir  bitta odamni davolaydi yoki 1 bola 2ta doxtirga borishi mumkun
+
+
+MEdia dagai faylini joilashini korsatish uchun seettting.py MEDIA_ROOT ni korsatib kerish kerak
+bu dokumnetatsiaydan bor koproq oqib chiqish kerak
+
+                              SIGNAL
+ Signal bu qahonki nimadir harakat yuzaga kelsA BOSHQA  bir jarayon ham yuzaga keltirishda ishlatiladi
