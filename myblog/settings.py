@@ -132,3 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+#auth
+LOGIN_REDIRECT_URL = 'blog-home'
+# profile ga kirganda error chiqshini oldini olish uchun
+LOGIN_URL = 'login'

@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from .forms import UserRegister
 from .models import Post
+from django.contrib.auth.decorators import login_required
 
 def regsiter(request):
     if request.method == "POST":
@@ -15,3 +16,8 @@ def regsiter(request):
     else:
         form = UserRegister()
     return render(request, 'users/register.html', {'form':form})
+
+
+@login_required
+def profile(request):
+    return render(request, 'users/profile.html')

@@ -1,0 +1,18 @@
+bu yerda  qisqcha nazariya yozip ketaman
+
+qachonki biz login knopkani bosganimizdq
+u bizni home page tashlash kerak
+buni biz django setting #auth bolimdan bilsak b oladi
+LOGIN_REDIRECT_URL =
+
+
+
+biz registerasiya qilib bolganizmda kein bizga login blan signup knopkais
+kerak bolmaydi shunchun biz uni orniga logout blna profile knopaski qoshimiz kerak
+biz uni is_authentcition() methodi bilan qilsak boladi
+
+
+akkauntga krimadan turip bizda profilega kirip ketyapti buni oldigni olish uchun
+biz login_required degan deckoratoni olib kelishimiz kerak u bizni login ni talab qiladi
+
+from django.contrib.auth.decorators import login_requierd
