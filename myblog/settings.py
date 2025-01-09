@@ -24,9 +24,10 @@ TEMPLATES_DIR = BASE_DIR / 'templates'
 SECRET_KEY = 'django-insecure-ms@k7ouup9q(gkyg6_2h9laonifbg-r1rlg!g60=1!@=1!1j3k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# api/settings.py
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -73,7 +74,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myblog.wsgi.application'
+# WSGI_APPLICATION = 'myblog.wsgi.application'
+# api/settings.py
+WSGI_APPLICATION = 'myblog.wsgi.app'
 
 
 # Database
@@ -138,3 +141,4 @@ LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
+
